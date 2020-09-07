@@ -5,7 +5,7 @@ Home: https://github.com/zero323/tryingsnake
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Exception handling, the functional way.
 
