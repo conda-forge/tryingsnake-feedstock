@@ -1,17 +1,17 @@
 {% set name = "tryingsnake" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 82618732359dc307188dc9de74ef417d2a7c82c689d604def193af6a3204f16f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 761c93661764e9af4d26243bd1b53da869328c76ce7fb7c82405d1fc16ff0946
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -26,13 +26,13 @@ test:
     - tryingsnake
 
 about:
-  home: "https://github.com/zero323/tryingsnake"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "Exception handling, the functional way."
-  doc_url: "https://github.com/zero323/tryingsnake/blob/master/README.md"
-  dev_url: "https://github.com/zero323/tryingsnake"
+  home: https://github.com/zero323/tryingsnake
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Exception handling, the functional way.
+  doc_url: https://github.com/zero323/tryingsnake/blob/master/README.md
+  dev_url: https://github.com/zero323/tryingsnake
 
 extra:
   recipe-maintainers:
